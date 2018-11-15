@@ -1,0 +1,5 @@
+FROM java:8-jre-alpine
+ADD tomcat /usr/local/lib
+ADD unfallmeldung-0.0.1-SNAPSHOT.jar /
+ENTRYPOINT ["java", "-jar", "/unfallmeldung-0.0.1-SNAPSHOT.jar"]
+EXPOSE 8083
